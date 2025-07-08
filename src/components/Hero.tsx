@@ -15,11 +15,11 @@ export const Hero = () => {
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-green-600/90 z-10"></div>
       
-      {/* Background image - English countryside driving scene */}
+      {/* Background image - Busy London scene */}
       <div className="absolute inset-0 bg-gray-800">
         <img 
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt="English countryside driving scene"
+          src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="Busy London street scene"
           className="w-full h-full object-cover"
         />
       </div>
@@ -50,7 +50,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg transition-all duration-300"
+              className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg transition-all duration-300 bg-white/10 backdrop-blur-sm"
               onClick={scrollToAbout}
             >
               Learn More

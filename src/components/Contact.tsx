@@ -28,7 +28,7 @@ export const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-semibold text-gray-900 mb-2">07817 367 804</p>
-                <p className="text-gray-600">Available 7 days a week, 8am - 8pm</p>
+                <p className="text-gray-600">Available Monday to Friday, 7am - 4:30pm</p>
               </CardContent>
             </Card>
 
@@ -75,9 +75,13 @@ export const Contact = () => {
               </CardHeader>
               <CardContent>
                 <div className="space-y-1 text-gray-900">
-                  <p>Monday - Friday: 8am - 8pm</p>
-                  <p>Saturday: 8am - 6pm</p>
-                  <p>Sunday: 10am - 4pm</p>
+                  <p><strong>Monday:</strong> 7am - 4:30pm</p>
+                  <p><strong>Tuesday:</strong> 7am - 4:30pm</p>
+                  <p><strong>Wednesday:</strong> 7am - 4:30pm</p>
+                  <p><strong>Thursday:</strong> 7am - 4:30pm</p>
+                  <p><strong>Friday:</strong> 7am - 4:30pm</p>
+                  <p><strong>Saturday:</strong> Closed</p>
+                  <p><strong>Sunday:</strong> Closed</p>
                 </div>
               </CardContent>
             </Card>
