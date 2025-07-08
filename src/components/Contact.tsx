@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle, Car } from 'lucide-react';
 
 export const Contact = () => {
   return (
@@ -12,8 +12,8 @@ export const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Ready to start your driving journey? Contact me today to book your first lesson 
-            or ask any questions about my services.
+            Ready to start your driving journey? Contact Steve today to book your first lesson 
+            or ask any questions about our services.
           </p>
         </div>
 
@@ -27,21 +27,8 @@ export const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-2xl font-semibold text-gray-900 mb-2">07123 456 789</p>
+                <p className="text-2xl font-semibold text-gray-900 mb-2">07817 367 804</p>
                 <p className="text-gray-600">Available 7 days a week, 8am - 8pm</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center">
-                  <Mail className="w-5 h-5 text-green-500 mr-2" />
-                  Email
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-xl font-semibold text-gray-900 mb-2">sarah@driveright.co.uk</p>
-                <p className="text-gray-600">I'll respond within 24 hours</p>
               </CardContent>
             </Card>
 
@@ -53,8 +40,29 @@ export const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-900 mb-2">Manchester & Surrounding Areas</p>
-                <p className="text-gray-600">Including Salford, Stockport, Oldham, and Bolton</p>
+                <p className="text-gray-900 mb-2">Cannock & Surrounding Areas</p>
+                <p className="text-gray-600">Including Rugeley, Hednesford, Heath Hayes, and Stafford</p>
+                <a 
+                  href="https://maps.app.goo.gl/FGxDPkNmaNV1RaYZ7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 underline mt-2 inline-block"
+                >
+                  View on Google Maps
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg">
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Car className="w-5 h-5 text-green-500 mr-2" />
+                  Training Vehicle
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-900 mb-2">2024 Red Suzuki Swift (3 Door)</p>
+                <p className="text-gray-600">Dual control vehicle with L plates • Modern and reliable</p>
               </CardContent>
             </Card>
 
@@ -100,13 +108,6 @@ export const Contact = () => {
               
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address
-                </label>
-                <Input type="email" placeholder="your.email@example.com" />
-              </div>
-              
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
                   Phone Number
                 </label>
                 <Input type="tel" placeholder="Your phone number" />
@@ -124,7 +125,7 @@ export const Contact = () => {
                   Message
                 </label>
                 <Textarea 
-                  placeholder="Tell me about your driving experience and what you'd like to achieve..."
+                  placeholder="Tell Steve about your driving experience and what you'd like to achieve..."
                   rows={4}
                 />
               </div>

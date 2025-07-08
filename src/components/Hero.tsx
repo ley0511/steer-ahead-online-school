@@ -22,19 +22,23 @@ export const Hero = () => {
           <div className="flex items-center justify-center mb-6">
             <Car className="w-12 h-12 text-yellow-400 mr-4" />
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-              DriveRight
+              STEVE'S Driving School
             </h1>
           </div>
           
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-2xl mx-auto leading-relaxed">
-            Professional driving instruction with over 15 years of experience. 
-            Learn to drive safely and confidently with our expert instructors.
+          <p className="text-xl md:text-2xl mb-4 text-blue-100 max-w-2xl mx-auto leading-relaxed">
+            Professional driving instruction with 25 years of experience. 
+            Learn to drive safely and confidently in our modern Suzuki Swift.
+          </p>
+
+          <p className="text-lg mb-8 text-yellow-300 font-semibold">
+            2024 Red Suzuki Swift • Dual Control Vehicle • Cannock Area
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Button size="lg" className="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-semibold px-8 py-6 text-lg transition-all duration-300 hover:scale-105">
               <Phone className="w-5 h-5 mr-2" />
-              Book Your Lesson
+              Call 07817 367 804
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg transition-all duration-300">
               Learn More
@@ -44,12 +48,12 @@ export const Hero = () => {
           <div className="flex items-center justify-center space-x-6 text-sm">
             <div className="flex items-center">
               <Star className="w-5 h-5 text-yellow-400 mr-1" />
-              <span>4.9/5 Rating</span>
+              <span>25 Years Experience</span>
             </div>
             <div className="w-px h-6 bg-blue-200"></div>
-            <div>500+ Students Taught</div>
+            <div>Modern Dual Control Car</div>
             <div className="w-px h-6 bg-blue-200"></div>
-            <div>95% Pass Rate</div>
+            <div>Cannock & Surrounding Areas</div>
           </div>
         </div>
       </div>
