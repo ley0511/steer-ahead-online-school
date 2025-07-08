@@ -3,16 +3,23 @@ import { Button } from '@/components/ui/button';
 import { Car, Phone, Star } from 'lucide-react';
 
 export const Hero = () => {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600/90 to-green-600/90 z-10"></div>
       
-      {/* Background image placeholder */}
+      {/* Background image - English countryside driving scene */}
       <div className="absolute inset-0 bg-gray-800">
         <img 
-          src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt="Driving lesson background"
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          alt="English countryside driving scene"
           className="w-full h-full object-cover"
         />
       </div>
@@ -40,7 +47,12 @@ export const Hero = () => {
               <Phone className="w-5 h-5 mr-2" />
               Call 07817 367 804
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg transition-all duration-300">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-6 text-lg transition-all duration-300"
+              onClick={scrollToAbout}
+            >
               Learn More
             </Button>
           </div>
